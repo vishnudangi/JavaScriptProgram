@@ -22,9 +22,9 @@ function totalprimeFact(n){
   var factors = [];
   for(var j=2; j<n; j++){
     if(n % j === 0){
-    if(primenum(j)){
-      factors.push(j)
-    }
+      if(primenum(j)){
+        factors.push(j)
+      }
     }
   }
   console.log("factors", factors);
