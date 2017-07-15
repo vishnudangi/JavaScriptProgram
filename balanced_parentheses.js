@@ -5,13 +5,13 @@ function balanceParenthesis(str){
     if(str[i] === '(' || str[i] === '[' || str[i] === '{'){
       stack.push(str[i]);
     } 
-    else if(str[i] === ')'&& stack[l-1] === '(' && l >=1){
+    else if(l >=1 && str[i] === ')'&& stack[l-1] === '('){
       stack.pop();
     }
-    else if(str[i] === ']'&& stack[l-1] === '[' & l >=1){
+    else if(l >=1 && str[i] === ']'&& stack[l-1] === '['){
       stack.pop();
     }
-    else if(str[i] === '}'&& stack[l-1] === '{' & l >=1){
+    else if(l >=1 && str[i] === '}'&& stack[l-1] === '{'){
       stack.pop();
     } 
     else {
